@@ -1,0 +1,153 @@
+/* Estilos generales del body para centrar el contenido principal */
+#intro {
+    background-image: url('/assets/img/index_bg.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: left; /* Centra la imagen de fondo */
+    padding: 20px; /* Espacio alrededor del contenido */
+    width: auto; /* Asegura que el elemento ocupe 100% del ancho disponible */
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+ 
+}
+
+.topnav {
+    display: flex; /* Utiliza flexbox para el contenedor */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    align-items: center; /* Centra los enlaces verticalmente */
+    width: auto; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    background-color: rgba(0, 153, 255, 0.322); /* Fondo blanco con opacidad */
+    border-radius: 10px; /* Bordes redondeados para la barra de navegación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la barra de navegación */
+    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    
+}
+.topnav a {
+    color: #ffffff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 1px 1px; /* Espacio alrededor del texto de los enlaces */
+    margin: 0 5px; /* Espacio entre los enlaces */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.topnav a:hover {
+    background-color: rgba(3, 51, 182, 0.5); /* Cambia el color de fondo al pasar el mouse */
+    color: #efff61; /* Cambia el color del texto al pasar el mouse */
+}
+
+.card-img-top {
+    width: 300px;;
+    height: 150px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Recorta la imagen para que cubra el espacio sin distorsión */
+    margin:auto; /* Centra la imagen horizontalmente */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    border: 2px solid #ccc; /* Borde alrededor de la imagen */
+    padding: 10px; /* Espacio entre el borde y la imagen */
+    background-image: url('/assets/img/index_bg.jpg'); /* Imagen de fondo */
+    /* background-color: #fff; */ /* Fondo blanco para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la imagen */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+.text-center {
+    text-align: center; /* Centra el texto dentro del elemento */
+    width: 100%; /* Asegura que el elemento ocupe todo el ancho disponible */
+    padding: 20px; /* Espacio interno para el texto */
+    font-size: 1.7em; /* Tamaño de fuente más grande para el texto */
+    color: rgb(255, 255, 255);  /* Color del texto */
+}
+
+.card-body {
+    padding: 20px; /* Espacio interno del cuerpo de la tarjeta */
+    text-align: center; /* Centra el texto dentro del cuerpo de la tarjeta */
+}
+
+.card-body:hover {
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transform: scale(1.20); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    transition: transform 0.1s ease; /* Transición suave para el efecto de aumento */
+}
+
+#textoPrincipal {
+    display: flex; /* Utiliza flexbox para el contenedor */
+    flex-wrap: wrap; /* Permite que los elementos secundarios se envuelvan en varias líneas */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espacio interno del contenedor */
+    /* Fondo degradado y de imagen */
+background: 
+    /* Degradado negro semitransparente encima */
+    linear-gradient(rgba(0, 80, 100, 0.411), rgba(0, 32, 34, 0.466)),
+    /* Luego tu imagen */
+    url('/assets/img/carrusel1.jpg');
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del contenedor */
+}
+
+#textoPrincipal h1 {
+    font-size: 3.5em; /* Tamaño de fuente más grande para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#textoPrincipal p {
+    line-height: 1.8; /* Espacio entre líneas */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+}
+
+#github-preview {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(240, 240, 240, 0.9)
+    ),
+    url('/assets/img/index_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+#github-preview p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+#github-preview a.btn {
+  margin-top: 10px;
+  padding: 6px 16px;
+  font-size: 1em;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+#github-preview a.btn:hover {
+  background-color: #0056b3;
+}
+
+#github-preview h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#github-preview .repo-box {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+#github-preview .repo-box p {
+  font-size: 1em;
+  line-height: 1.5;
+}

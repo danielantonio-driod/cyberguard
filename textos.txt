@@ -1,0 +1,43 @@
+Aquí tienes tres bloques de texto listos para insertar en tus archivos HTML: (AI CONTENT)
+
+--- 
+
+### 1. Ciberseguridad en Python
+
+La seguridad en aplicaciones web desarrolladas con Python comienza en el propio framework. Si usas Django o Flask, aprovecha los mecanismos integrados de protección contra **CSRF** (Cross-Site Request Forgery), **XSS** (Cross-Site Scripting) y **SQL Injection** que ofrecen sus ORM y plantillas seguras.
+Valida siempre la entrada del usuario con librerías como **WTForms** o **pydantic**, y escapa cualquier contenido dinámico antes de mostrarlo en las vistas.
+Aplica siempre conexiones **HTTPS** configurando correctamente tu servidor (Gunicorn, uWSGI o un reverse proxy como Nginx) y usa certificados TLS actuales (Let's Encrypt).
+Finalmente, gestiona secretos (claves, tokens, contraseñas de base de datos) con variables de entorno o servicios de vault, nunca los incluyas directamente en tu código ni en tu repositorio.
+
+---
+
+### 2. Amenazas Comunes
+
+1. **Inyección de SQL**
+   Ocurre cuando el atacante introduce código SQL malicioso a través de formularios o parámetros de URL. Puede exfiltrar datos sensibles o modificar la base de datos.
+
+2. **Cross-Site Scripting (XSS)**
+   Se da cuando un atacante logra inyectar scripts en las páginas que ven otros usuarios, robando cookies o realizando acciones en su nombre.
+
+3. **Cross-Site Request Forgery (CSRF)**
+   Consiste en engañar al navegador del usuario para que envíe solicitudes no deseadas a aplicaciones en las que ya está autenticado.
+
+4. **Desbordamiento de búfer**
+   Menos común en Python puro, pero puede aparecer en módulos en C o extensiones nativas que manejen mal la memoria, dando lugar a ejecución de código arbitrario.
+
+5. **Inseguridad en dependencias**
+   Librerías desactualizadas o sin mantenimiento pueden contener vulnerabilidades conocidas. Siempre revisa los informes de seguridad (`pip-audit`, GitHub Advisory).
+
+---
+
+### 3. Consejos para Evitar Ataques
+
+* **Mantén tus dependencias al día**: utiliza `pip-audit` o revisa regularmente las alertas de seguridad en tu gestor de repositorios.
+* **Principio de mínimos privilegios**: cada parte de tu aplicación (procesos, bases de datos, servicios) debe tener solo los permisos estrictamente necesarios.
+* **Autenticación y autorización sólidas**: implementa mecanismos de autenticación fuertes (OAuth2, JWT con expiración) y controla el acceso a recursos según roles.
+* **Registro y monitoreo**: guarda logs de acceso, errores y eventos de seguridad; usa herramientas como ELK o un servicio cloud para detectar patrones sospechosos.
+* **Pruebas de seguridad**: incorpora análisis estático (p. ej. Bandit) y dinámico (SAST/DAST) en tu CI/CD antes de desplegar.
+
+---
+
+Estos textos son breves y directos para tus tres páginas HTML. Si necesitas más detalles o formateo adicional, dímelo.
